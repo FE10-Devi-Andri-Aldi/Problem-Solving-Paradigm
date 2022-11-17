@@ -75,17 +75,17 @@ function binarySearch (array, x) {
     // ------------------------------ Proses -------------------------------
 
     while (start <= end) { 
-        mid = Math.floor((start + end) / 2); 
+        mid = Math.floor((start + end) / 2); // 
 
-        if (array[mid] === x) {
-            return mid;
-        } else if (array[mid] < x) {
-            start = mid + 1;
-        } else {
-            end = mid - 1;
+        if (array[mid] === x) { // jika array pada index mid sama dengan x
+            return mid; // panggil mid
+        } else if (array[mid] < x) { // kalo nilai tengah kurang dari target geser kekanan 
+            start = mid + 1; // return
+        } else { // kalo nilai tengah lebih dari target maka geser ke kiri
+            end = mid - 1; // return end
         }
     }
-    return -1;
+    return -1; // kalo ga ditemukan maka index hasilnya -1
 }
 
 // ------------------------------------- OutPut ------------------------------------------

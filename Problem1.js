@@ -29,10 +29,10 @@ function simpleEquations(a, b, c) {
   
   */
 
-// ------------------------------ PROSES LOOPING -------------------------------
-  for (let i = 1; i <= a; i++) { // looping 1
-    for (let j = 1; j <= b; j++) { // looping 2
-      for (let k = 1; k <= c; k++) { // looping 3
+// ----------------------------------------------------- PROSES LOOPING -------------------------------//
+  for (let i = 0; i <= a; i++) { // looping 1 untuk si A
+    for (let j = 0; j <= b; j++) { // looping 2 untuk si B
+      for (let k = 0; k <= c; k++) { // looping 3 untuk si C
         if (i + j + k === a && i * j * k === b && i*i + j*j + k*k === c) { // pernyataan dari soal x^2 adalah i * i, y^2 adalah y*y, dan z^2 adalah j*j.
           console.log(i, j, k); // i, j, k adalah hasil looping
           return; // memanggil pernyataan dari if
@@ -41,7 +41,6 @@ function simpleEquations(a, b, c) {
     }
   }
   console.log("no solution"); // ini adalah peryataan yang mana, jika tidak ada sama sekali.
-
 }
 
 // -------------------- OUTPUT ---------------------

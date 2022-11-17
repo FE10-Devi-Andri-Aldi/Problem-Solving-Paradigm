@@ -19,7 +19,7 @@ function moneyChange(money) {
     let sortedArr = arrNumber.sort((a, b) => {
       return a - b;
     });
-    */
+    */    
     arrMoneySort = arrMoney.sort((a, b) => { // sorting pada array
         return b - a;
     });
